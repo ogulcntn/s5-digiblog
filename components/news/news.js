@@ -45,6 +45,14 @@ function NewsBuilder(object){
   div.appendChild(yazi3);
   div.appendChild(button);
 
+  button.addEventListener("click",(event) =>{
+      if(div.classList.contains("isOpen")){
+        div.classList.remove("isOpen");
+      }else{
+        div.classList.add("isOpen");
+      }
+    })
+    
   return div;
 }
 const articles = document.querySelector(".articleList");
