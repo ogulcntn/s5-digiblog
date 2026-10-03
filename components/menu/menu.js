@@ -11,13 +11,21 @@ function MenuBuilder(array){
     icerik.textContent = baslik;
     icerikListe.appendChild(icerik);
   })
-  menu.appendChild(icerikListe);
 
+  const menuButton = document.querySelector(".menu-button");
+  menuButton.addEventListener("click", (event) => {
+  if(menu.classList.contains("isOpen")){
+        menu.classList.remove("isOpen");
+      }else{
+        menu.classList.add("isOpen");
+      }
+  })
+
+  menu.appendChild(icerikListe);
   return menu;
 }
 const header = document.querySelector(".header");
 header.appendChild(MenuBuilder(menuElemanlari));
-
 
 /*
 Adım 1: MenuBuilder component fonksiyonu yazmak
