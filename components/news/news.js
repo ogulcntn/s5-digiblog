@@ -9,6 +9,49 @@ const sampleNewsItem = {
   ucuncuParagraf: "Örnek paragraf 3",
 };
 
+function NewsBuilder(object){
+  const haberBasligi = document.createElement("h2");
+  haberBasligi.textContent = object.baslik;
+
+  const date = document.createElement("p");
+  date.classList.add("date");
+  date.textContent = object.tarih;
+
+  const yazi1 = document.createElement("p");
+  yazi1.classList.add("yazi1");
+  yazi1.textContent = object.ilkParagraf;
+
+  const yazi2 = document.createElement("p");
+  yazi2.classList.add("yazi2");
+  yazi2.textContent = object.ikinciParagraf;
+
+  const yazi3 = document.createElement("p");
+  yazi3.classList.add("yazi3");
+  yazi3.textContent = object.ucuncuParagraf;
+
+  const button = document.createElement("button");
+  button.classList.add("expandButton");
+  button.textContent = "+";
+
+  
+  const div = document.createElement("div");
+
+  
+  div.classList.add("article");
+  div.appendChild(haberBasligi);
+  div.appendChild(date);
+  div.appendChild(yazi1);
+  div.appendChild(yazi2);
+  div.appendChild(yazi3);
+  div.appendChild(button);
+
+  return div;
+}
+const articles = document.querySelector(".articleList");
+newsData.forEach(news => {
+  articles.appendChild(NewsBuilder(news));
+})
+
 /*
 Adım 1: NewsBuilder component fonksiyonu yazmak
 Yazacağınız NewsBuilder fonksiyonu, yukarıdaki sampleNewsItem yapısındaki bir objeyi parametre olarak almalı ve alttaki yapıya sahip bir içerik oluşturup return etmeli:
