@@ -1,5 +1,24 @@
 import { menuElemanlari } from "./../../resources.js";
 
+function MenuBuilder(array){
+  const menu = document.createElement("div");
+  menu.classList.add("menu");
+
+  const icerikListe = document.createElement("ul");
+
+  array.forEach(baslik =>{
+    const icerik = document.createElement("li");
+    icerik.textContent = baslik;
+    icerikListe.appendChild(icerik);
+  })
+  menu.appendChild(icerikListe);
+
+  return menu;
+}
+const header = document.querySelector(".header");
+header.appendChild(MenuBuilder(menuElemanlari));
+
+
 /*
 Adım 1: MenuBuilder component fonksiyonu yazmak
 Stringlerden oluşan bir arrayden, bir menü oluşturmak için MenuBuilder adında bir component (fonksiyon) yazın.

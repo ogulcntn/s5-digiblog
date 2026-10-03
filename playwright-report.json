@@ -1,76 +1,76 @@
 {
   "stats": {
-    "expected": 7,
-    "unexpected": 6,
+    "expected": 11,
+    "unexpected": 2,
     "skipped": 0,
     "flaky": 0,
-    "duration": 9301
+    "duration": 8831
   },
   "tests": [
     {
       "title": "article sayısı doğru mu?",
       "status": "passed",
-      "duration": 808
+      "duration": 786
     },
     {
       "title": "her article içinde gerekli elementler bulunuyor mu?",
       "status": "passed",
-      "duration": 720
+      "duration": 738
     },
     {
       "title": "article başlık ve tarihleri doğru render ediliyor mu?",
       "status": "passed",
-      "duration": 671
+      "duration": 663
     },
     {
       "title": "expandButton tıklanınca ilgili article'a isOpen classı ekleniyor mu?",
       "status": "passed",
-      "duration": 720
+      "duration": 749
     },
     {
       "title": "bir article'da isOpen classı varken expandButton'a tıklanınca isOpen classı kaldırılıyor mu?",
       "status": "passed",
-      "duration": 768
+      "duration": 785
     },
     {
       "title": "expandButton textContent olarak '+' içeriyor mu?",
       "status": "passed",
-      "duration": 668
+      "duration": 708
     },
     {
       "title": "menu oluşturulmuş ve header içinde bulunuyor mu?",
-      "status": "failed",
-      "duration": 805
+      "status": "passed",
+      "duration": 645
     },
     {
       "title": "menu içinde ul ve doğru sayıda li var mı?",
-      "status": "failed",
-      "duration": 777
+      "status": "passed",
+      "duration": 684
     },
     {
       "title": "li içerikleri menuElemanlari ile eşleşiyor mu?",
-      "status": "failed",
-      "duration": 819
+      "status": "passed",
+      "duration": 704
     },
     {
       "title": "menu-button'a tıklanınca isOpen classı ekleniyor mu?",
       "status": "failed",
-      "duration": 854
+      "duration": 829
     },
     {
       "title": "menu-button'a tekrar tıklanınca isOpen classı kaldırılıyor mu?",
       "status": "failed",
-      "duration": 885
+      "duration": 821
     },
     {
       "title": "ilk açılışta menu isOpen classı içermiyor olmalı",
-      "status": "failed",
-      "duration": 802
+      "status": "passed",
+      "duration": 719
     },
     {
       "title": "index.html içeriği değişmemiş olmalı",
       "status": "passed",
-      "duration": 5
+      "duration": 1
     }
   ]
 }
